@@ -94,9 +94,9 @@
         }
     },
     "variables": {
-        "_artifactsLocation": "[concat(parameters('_urlLocation'), '/AzureProvisioning/nexis.nearline')]",
+        "_artifactsLocation": "[concat(parameters('_urlLocation'))]",
         "_artifactsLocationSasToken": "[parameters('_sasToken')]",
-        "_buildArtifactsLocation": "[concat(parameters('_urlLocation'), '/installers')]",
+        "_buildArtifactsLocation": "[concat(parameters('_urlLocation'), '/nestedtemplates')]",
         "_buildArtifactsLocationSasToken": "[parameters('_sasToken')]",
         "deployNexisCloudTemplateURL": "[concat(variables('_artifactsLocation'),'/nestedtemplates/deploycloud.json',parameters('_sasToken'))]",
         "deployNexisCloud": "deployNexisCloud",
